@@ -1,0 +1,10 @@
+
+
+<div class="row" *ngIf="!viewProducts">
+  <span >Cargando Productos...</span>
+</div>
+<div class="row" *ngIf="viewProducts">
+  <div class="col-4" *ngFor="let product of productsItem;">
+    <app-product-item [data]="product"></app-product-item>
+  </div>
+</div>
